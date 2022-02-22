@@ -1,0 +1,71 @@
+{
+  "env": {
+    "es6": true,
+    "commonjs": false,
+    "node": true
+  },
+  "extends": [
+    "plugin:@typescript-eslint/recommended",
+    "prettier"
+  ],
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "ecmaFeatures": {
+      "impliedStrict": true,
+      "legacyDecorators": true
+    },
+    "ecmaVersion": 2020,
+    "sourceType": "module",
+    "project": "./tsconfig.json"
+  },
+  "globals": {
+    "process": true
+  },
+  "plugins": [
+    "@typescript-eslint",
+    "prettier"
+  ],
+  "settings": {
+    "import/resolver": {
+      "typescript": {}
+    },
+    "import/parsers": {
+      "@typescript-eslint/parser": [".ts"]
+    }
+  },
+  "rules": {
+    "prettier/prettier": "error",
+    "quotes": ["error", "single"],
+    "semi": ["error", "always"],
+    "no-console": 0,
+    "no-undef" : 0,
+    "no-case-declarations": 0,
+    "no-empty": 0,
+    "object-curly-spacing": 0,
+    "import/no-dynamic-require": 0,
+    "global-require": 0,
+    "func-names": 0,
+    "no-plusplus": 0,
+    "no-param-reassign": 0,
+    "no-restricted-properties": 0,
+    "no-template-curly-in-string": 0,
+    "arrow-parens": ["warn", "always"],
+    "prefer-destructuring": 0,
+    "no-restricted-globals": 0,
+    "indent": 0,
+    "no-underscore-dangle": 0,
+    "no-bitwise": 0,
+    "@typescript-eslint/no-unused-vars": ["error", { "argsIgnorePattern": "^_" }],
+    "@typescript-eslint/naming-convention": [
+      "error",
+      {
+        "selector": "interface",
+        "format": ["PascalCase"]
+      }
+    ],
+    "@typescript-eslint/array-type": 0,
+    "@typescript-eslint/ban-ts-comment": 0,
+    "@typescript-eslint/explicit-function-return-type": "off",
+    "@typescript-eslint/no-object-literal-type-assertion": 0
+  }
+}
