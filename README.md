@@ -1,16 +1,8 @@
 # Redis stream client
 
-Allows consuming data from redis stream
-
-### Release
-
-Run `yarn build` generate new file in dist dir
-
-Create and push tag with the newest version
+Allow consuming data from redis stream
 
 ### Quick start
-
-**Installation**:  
 
 in your package.json
 ```json

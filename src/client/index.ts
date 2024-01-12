@@ -16,7 +16,8 @@ export class RdsClient {
             await streamReader.connect();
             return new StreamListener(streamReader);
         } catch (error) {
-            throw new StreamListenerError(error.stack);
+            //@ts-ignore
+            throw new StreamListenerError(error.message);
         }
     }
 }
